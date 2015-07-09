@@ -1,0 +1,57 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import 'font-awesome/scss/font-awesome';
+
+/**
+ * App-wide Styles
+ */
+
+
+body{
+  background: #fff;
+}
+
+.glyphicon-chevron-left,
+.glyphicon-chevron-right,
+.glyphicon-chevron-up,
+.glyphicon-chevron-down{
+  color: #000;
+}
+
+.ng-isolate-scope.stretch.ui-splitbar , .ng-isolate-scope.stretch.ui-splitbar{
+    background-color: #f8f8f8;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.meackup{
+	padding:15px;
+ }
+
+ .examplediv{
+ 	border: 1px solid #000;
+ 	width: 30%;
+    // height: 100px;
+ }
+
+ .resizable {
+    resize: both;   /* Options: horizontal, vertical, both */
+    overflow: auto; /* fix for Safari */
+}
+
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'main/main.scss';
+@import 'scan/scan.scss';
+@import 'modal/modal.scss';
+// endinjector
