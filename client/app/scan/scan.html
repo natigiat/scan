@@ -11,27 +11,42 @@
           <div ui-layout-container class=" html-back" size="40%">
         	<!-- code go here -->
         	<div class="meackup">
-        		<img src="https://www.freshdesignweb.com/wp-content/uploads/2015/06/GRAPE-Responsive-App-Landing-Page-Template.jpg" class="img-responsive" alt="Responsive image">
+        		<img src="https://www.freshdesignweb.com/wp-content/uploads/2015/06/GRAPE-Responsive-App-Landing-Page-Template.jpg" class="img-responsive moc" alt="Responsive image">
 
-		          
-        		  <div class="examplediv resizable" ng-style="{left: divleft, top: divtop, width: divwidth, height: divheight}" draggable xpos="divleft" ypos="divtop">	    
-				  </div>
+		        <!-- boxing -->
+        		<div class="examplediv resizable" ng-show="showme" ng-style="{left: divleft, top: divtop, width: divwidth, height: divheight}" draggable xpos="divleft" ypos="divtop">	   
 
-<!-- 				  <div class="examplediv resizable" ng-style="{left: divleft2, top: divtop2, width: divwidth, height: divheight}" draggable xpos="divleft2" ypos="divtop2">  
-				  </div> -->
+				</div><!-- boxing finish-->
+				
+			  <input type="number" ng-model="divleft"/>
+			  <input type="number" ng-model="divtop"/>
+			  {{divleft}}, {{divtop}}
+			  <input type="number" ng-model="divleft2"/>
+			  <input type="number" ng-model="divtop2"/>
+			  {{divleft2}}, {{divtop2}}
 
-
-				  <input type="number" ng-model="divleft"/>
-				  <input type="number" ng-model="divtop"/>
-				  {{divleft}}, {{divtop}}
-				  <input type="number" ng-model="divleft2"/>
-				  <input type="number" ng-model="divtop2"/>
-				  {{divleft2}}, {{divtop2}}
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active">
+			        <i class="icon-crop navbar-brand" ng-click="showme = !showme"></i>
+			        </li>
+			        <li><a href="#">Link</a></li>
+			        <li><a href="#">Link</a></li>
+			      </ul>
+			      
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
 
 
         	</div>
 			<!-- code finish here -->
           </div>
+
+         
           
 
           <div ui-layout-container class=" js-back" >dgfsdfasdfsdsdfdfgsdfsdfdf</div>
@@ -39,6 +54,6 @@
         </div>
       </div>
     
-      <div ui-layout-container class=" css-back" >dfgdghfg</div>
+      <div ui-layout-container class="css-back" >dfgdghfg  <canvas id="c" class=".moc"></canvas></div>
     </div>
 

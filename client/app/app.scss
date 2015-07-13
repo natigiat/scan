@@ -33,6 +33,11 @@ body{
 
 .meackup{
 	padding:15px;
+	border: 1px dashed #00D0FF;
+ }
+
+ .moc {
+ 	border: 1px dashed #00D0FF;
  }
 
  .examplediv{
@@ -41,10 +46,10 @@ body{
     // height: 100px;
  }
 
- .resizable {
-    resize: both;   /* Options: horizontal, vertical, both */
-    overflow: auto; /* fix for Safari */
-}
+//  .resizable {
+//     resize: both;   Options: horizontal, vertical, both
+//     overflow: auto; /* fix for Safari */
+// }
 
 
 // Component styles are injected through grunt
